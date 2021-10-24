@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    @Html.Partial("MetatagsPartial")
+    @Html.Partial("CssPartial")
+
+</head>
+<body>
+    <!--HeaderPartial-->
+    @Html.Partial("HeaderPartial")
+    <wbr>
+
+    <div class="row">
+        <div id="genres" class="col-sm-3 .d-none .d-sm-block">
+            @Html.Action("Menu", "Nav")
+        </div>
+                    
+        <div class="col-xs-12 col-sm-8">
+            @RenderBody()
+        </div>
+    </div>
+
+</body>
+</html>
